@@ -1,0 +1,32 @@
+---------------------------------------------------------------
+[ 2018-01-15T10:41:10+08:00 ] 0.0.0.0 GET /shopback/shop/index.html
+[ info ] www.lianmeng.com/shopback/shop/index.html [运行时间：0.086506s][吞吐率：11.56req/s] [内存消耗：2,437.82kb] [文件加载：66]
+[ error ] [0]语法解析错误: syntax error, unexpected '$this' (T_VARIABLE)[D:\Aliases\lianmeng\app\shopback\home\Shop.php:29]
+---------------------------------------------------------------
+[ 2018-01-15T10:42:24+08:00 ] 0.0.0.0 GET /shopback/shop/index.html?page=1
+[ info ] www.lianmeng.com/shopback/shop/index.html?page=1 [运行时间：0.095113s][吞吐率：10.51req/s] [内存消耗：2,438.53kb] [文件加载：66]
+[ error ] [0]语法解析错误: syntax error, unexpected '$this' (T_VARIABLE)[D:\Aliases\lianmeng\app\shopback\home\Shop.php:30]
+---------------------------------------------------------------
+[ 2018-01-15T10:42:40+08:00 ] 0.0.0.0 GET /shopback/shop/index.html?page=1
+[ info ] www.lianmeng.com/shopback/shop/index.html?page=1 [运行时间：0.108999s][吞吐率：9.17req/s] [内存消耗：2,438.53kb] [文件加载：66]
+[ error ] [0]语法解析错误: syntax error, unexpected '$this' (T_VARIABLE)[D:\Aliases\lianmeng\app\shopback\home\Shop.php:29]
+---------------------------------------------------------------
+[ 2018-01-15T11:00:19+08:00 ] 0.0.0.0 GET /shopback/shop/search/123
+[ info ] www.lianmeng.com/shopback/shop/search/123 [运行时间：0.102850s][吞吐率：9.72req/s] [内存消耗：2,645.38kb] [文件加载：74]
+[ error ] [0]variable type error： array[D:\Aliases\lianmeng\thinkphp\library\think\Response.php:318]
+---------------------------------------------------------------
+[ 2018-01-15T11:00:29+08:00 ] 0.0.0.0 GET /shopback/shop/search/search/123
+[ info ] www.lianmeng.com/shopback/shop/search/search/123 [运行时间：0.091873s][吞吐率：10.88req/s] [内存消耗：2,645.94kb] [文件加载：74]
+[ error ] [0]variable type error： array[D:\Aliases\lianmeng\thinkphp\library\think\Response.php:318]
+---------------------------------------------------------------
+[ 2018-01-15T11:01:51+08:00 ] 0.0.0.0 GET /shopback/shop/index.html
+[ info ] www.lianmeng.com/shopback/shop/index.html [运行时间：0.137843s][吞吐率：7.25req/s] [内存消耗：2,858.08kb] [文件加载：80]
+[ error ] [0]语法解析错误: syntax error, unexpected '123' (T_LNUMBER), expecting ',' or ';'[D:\Aliases\lianmeng\runtime\temp\b398806be5fd97903a248b98575f534f.php:136]
+---------------------------------------------------------------
+[ 2018-01-15T11:02:10+08:00 ] 0.0.0.0 GET /shopback/shop/index.html
+[ info ] www.lianmeng.com/shopback/shop/index.html [运行时间：0.134847s][吞吐率：7.42req/s] [内存消耗：2,858.17kb] [文件加载：80]
+[ error ] [0]语法解析错误: syntax error, unexpected '"/se/"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'[D:\Aliases\lianmeng\runtime\temp\b398806be5fd97903a248b98575f534f.php:136]
+---------------------------------------------------------------
+[ 2018-01-15T11:02:53+08:00 ] 0.0.0.0 GET /shopback/shop/index.html
+[ info ] www.lianmeng.com/shopback/shop/index.html [运行时间：0.137576s][吞吐率：7.27req/s] [内存消耗：2,858.08kb] [文件加载：80]
+[ error ] [0]语法解析错误: syntax error, unexpected '.123' (T_DNUMBER), expecting ',' or ')'[D:\Aliases\lianmeng\runtime\temp\b398806be5fd97903a248b98575f534f.php:136]
