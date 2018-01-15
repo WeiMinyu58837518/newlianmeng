@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:37:"theme\shopback\default\shop\index.php";i:1515986520;s:40:"theme/shopback/default/common/header.php";i:1515769925;s:38:"theme/shopback/default/common/left.php";i:1515824282;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:37:"theme\shopback\default\shop\index.php";i:1515988140;s:40:"theme/shopback/default/common/header.php";i:1515769925;s:38:"theme/shopback/default/common/left.php";i:1515824282;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,7 +100,6 @@
             </tbody>
             <?php endforeach; endif; else: echo "" ;endif; ?>
         </table>
-         pagination
         <div class="pagination" id="pagee">
 <!--            <ul>-->
 <!--                <li><a href="#">Prev</a></li>-->
@@ -142,34 +141,35 @@
             }
             if(a.info==10000){
                 var data=a.data;
+//                console.log(a.data);return;
                 var temp='';
-                $.each(data,function(key,value){
-                    console.log(value);
-                    temp+='<tr class="';
-                    if(key%2==0){
-                        temp+='"info"';
-                    }else{
-                        temp+='"warning"';
-                    }
+                for(var i=0;i<data.length;i++){
+                    temp+='<tr class="info"';
+//                    if(key%2==0){
+//                        temp+='info';
+//                    }else{
+//                        temp+='warning';
+//                    }
                     temp+='><td>';
-                    temp+=key+1;
+                    temp+=i+1;
                     temp+='</td><td><a href="javascript:void(0);">';
-                    temp+=value.name;
+                    temp+=data[i].name;
                     temp+='</a></td><td>';
-                    temp+=value.price;
+                    temp+=data[i].price;
                     temp+='</td><td>';
-                    temp+=value.age;
+                    temp+=data[i].age;
                     temp+='</td><td>';
-                    temp+=value.sex;
+                    temp+=data[i].sex;
                     temp+='</td><td>';
-                    temp+=value.color;
+                    temp+=data[i].color;
                     temp+='</td><td><a href="javascript:void(0);" class="edit" idd=';
-                    temp+='"value.id"';
+                    temp+="'data[i].id'";
                     temp+='> 编辑 </a><a href="javascript:void(0);" idd=';
-                    temp+='"value.id"';
+                    temp+="'data[i].id'";
                     temp+=' class="delete"> 删除 </a></td></tr>';
-                });
-                $('#tbody').html(temp);
+                }
+//                console.log(temp);return;
+                $('tbody').html(temp);
                 $('#pagee').html('');
             }
         })

@@ -72,7 +72,7 @@
             var id=$(this).attr('idd');
             $.get('{:url("total/content/delete")}'+'?id='+id,function (a) {
                 if(a.info==10000){
-                    layer.msg('删除成功')
+                    layer.msg('删除成功');
                     history.go(0);
                 }
                 if(a.info==20000){

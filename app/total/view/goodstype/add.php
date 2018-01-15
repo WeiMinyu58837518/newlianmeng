@@ -1,14 +1,14 @@
 <form class="layui-form layui-form-pane" action="{:url('add')}" id="editForm" method="post">
     <fieldset class="layui-elem-field layui-field-title">
-        <legend>新增分类</legend>
+        <legend>商品分类添加</legend>
     </fieldset>
     <div class="layui-form-item">
         <label class="layui-form-label">请选择父类</label>
         <div class="layui-input-inline">
             <select name="pid" class="field-role_id" type="select">
                 <option value="0" selected="">顶级分类</option>
-                {volist name='type' id='vol'}
-                <option value="{$vol['id']}">{$vol['level']}{$vol['name']}</option>
+                {volist name='data' id='vo'}
+                <option value="{$vo['id']}">{$vo['level']}{$vo['type']}</option>
                 {/volist}
             </select>
         </div>
@@ -16,9 +16,8 @@
     <div class="layui-form-item">
         <label class="layui-form-label">分类名称</label>
         <div class="layui-input-inline">
-            <input type="text" class="layui-input field-username" name="name" lay-verify="title" autocomplete="off" placeholder="请输入用户名">
+            <input type="text" class="layui-input field-username" name="type" lay-verify="title" autocomplete="off" placeholder="请输入分类名称">
         </div>
-        <div class="layui-form-mid layui-word-aux"></div>
     </div>
     <div class="layui-form-item">
         <div class="layui-input-block">

@@ -67,7 +67,6 @@
             </tbody>
             {/volist}
         </table>
-         pagination
         <div class="pagination" id="pagee">
 <!--            <ul>-->
 <!--                <li><a href="#">Prev</a></li>-->
@@ -97,48 +96,3 @@
 <!-- 日期控件 -->
 <script src="/theme/shopback/default/static/js/calendar/WdatePicker.js"></script>
 </html>
-<script>
-    $('#search').click(function(){
-        var search=$('#sear').val();
-        var data={
-            se:search
-        }
-        $.post('{:url("shopback/shop/search")}',data,function(a){
-            if(a.info==20000){
-                alert('没有这件商品');
-            }
-            if(a.info==10000){
-                var data=a.data;
-                var temp='';
-                $.each(data,function(key,value){
-                    console.log(value);
-                    temp+='<tr class="';
-                    if(key%2==0){
-                        temp+='"info"';
-                    }else{
-                        temp+='"warning"';
-                    }
-                    temp+='><td>';
-                    temp+=key+1;
-                    temp+='</td><td><a href="javascript:void(0);">';
-                    temp+=value.name;
-                    temp+='</a></td><td>';
-                    temp+=value.price;
-                    temp+='</td><td>';
-                    temp+=value.age;
-                    temp+='</td><td>';
-                    temp+=value.sex;
-                    temp+='</td><td>';
-                    temp+=value.color;
-                    temp+='</td><td><a href="javascript:void(0);" class="edit" idd=';
-                    temp+='"value.id"';
-                    temp+='> 编辑 </a><a href="javascript:void(0);" idd=';
-                    temp+='"value.id"';
-                    temp+=' class="delete"> 删除 </a></td></tr>';
-                });
-                $('#tbody').html(temp);
-                $('#pagee').html('');
-            }
-        })
-    })
-</script>

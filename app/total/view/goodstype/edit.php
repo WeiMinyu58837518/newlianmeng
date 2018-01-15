@@ -1,14 +1,14 @@
-<form class="layui-form layui-form-pane" action="{:url('add')}" id="editForm" method="post">
+<form class="layui-form layui-form-pane" action="{:url('edit')}" id="editForm" method="post">
     <fieldset class="layui-elem-field layui-field-title">
-        <legend>新增分类</legend>
+        <legend>商品分类添加</legend>
     </fieldset>
     <div class="layui-form-item">
         <label class="layui-form-label">请选择父类</label>
         <div class="layui-input-inline">
             <select name="pid" class="field-role_id" type="select">
-                <option value="0" selected="">顶级分类</option>
-                {volist name='type' id='vol'}
-                <option value="{$vol['id']}">{$vol['level']}{$vol['name']}</option>
+                <option value="0">顶级分类</option>
+                {volist name='type' id='vo'}
+                <option value="{$vo['id']}" {$vo['id']==$data['pid'] ? 'selected=""' : ''}>{$vo['level']}{$vo['type']}</option>
                 {/volist}
             </select>
         </div>
@@ -16,10 +16,10 @@
     <div class="layui-form-item">
         <label class="layui-form-label">分类名称</label>
         <div class="layui-input-inline">
-            <input type="text" class="layui-input field-username" name="name" lay-verify="title" autocomplete="off" placeholder="请输入用户名">
+            <input type="text" class="layui-input field-username" value="{$data['type']}" name="type" lay-verify="title" autocomplete="off" placeholder="请输入分类名称">
         </div>
-        <div class="layui-form-mid layui-word-aux"></div>
     </div>
+    <input type="hidden" name="id" class="" value="{$data['id']}">
     <div class="layui-form-item">
         <div class="layui-input-block">
             <button type="submit" class="layui-btn" lay-submit="" lay-filter="formSubmit">提交</button>

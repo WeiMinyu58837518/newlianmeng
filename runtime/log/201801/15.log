@@ -30,3 +30,79 @@
 [ 2018-01-15T11:02:53+08:00 ] 0.0.0.0 GET /shopback/shop/index.html
 [ info ] www.lianmeng.com/shopback/shop/index.html [运行时间：0.137576s][吞吐率：7.27req/s] [内存消耗：2,858.08kb] [文件加载：80]
 [ error ] [0]语法解析错误: syntax error, unexpected '.123' (T_DNUMBER), expecting ',' or ')'[D:\Aliases\lianmeng\runtime\temp\b398806be5fd97903a248b98575f534f.php:136]
+---------------------------------------------------------------
+[ 2018-01-15T12:15:11+08:00 ] 0.0.0.0 GET /admin.php/total/shop/index.html
+[ info ] www.lianmeng.com/admin.php/total/shop/index.html [运行时间：0.178646s][吞吐率：5.60req/s] [内存消耗：3,112.45kb] [文件加载：88]
+[ error ] [8]未定义变量: ke[D:\Aliases\lianmeng\runtime\temp\f57ae6fb98c7fa2415d6adaba03059c4.php:359]
+---------------------------------------------------------------
+[ 2018-01-15T13:52:13+08:00 ] 0.0.0.0 GET /admin.php/total/shop/goods/id/12.html
+[ info ] www.lianmeng.com/admin.php/total/shop/goods/id/12.html [运行时间：0.186542s][吞吐率：5.36req/s] [内存消耗：3,189.93kb] [文件加载：88]
+[ error ] [8]未定义数组索引: name[D:\Aliases\lianmeng\runtime\temp\cef3a4607ae53821d2494be1f4c49bbb.php:500]
+---------------------------------------------------------------
+[ 2018-01-15T14:35:35+08:00 ] 0.0.0.0 GET /admin.php/total/goodstype/index.html
+[ info ] www.lianmeng.com/admin.php/total/goodstype/index.html [运行时间：0.166580s][吞吐率：6.00req/s] [内存消耗：3,119.26kb] [文件加载：88]
+[ error ] [8]未定义数组索引: name[D:\Aliases\lianmeng\runtime\temp\8fb015ea34d98e556a9761427144b7ec.php:408]
+---------------------------------------------------------------
+[ 2018-01-15T14:54:35+08:00 ] 0.0.0.0 POST /admin.php/total/goodstype/add.html
+[ info ] www.lianmeng.com/admin.php/total/goodstype/add.html [运行时间：0.153063s][吞吐率：6.53req/s] [内存消耗：2,757.70kb] [文件加载：80]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'newlianmeng.lm_goodstype' doesn't exist[D:\Aliases\lianmeng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-01-15T14:54:47+08:00 ] 0.0.0.0 POST /admin.php/total/goodstype/add.html
+[ info ] www.lianmeng.com/admin.php/total/goodstype/add.html [运行时间：0.141765s][吞吐率：7.05req/s] [内存消耗：2,757.70kb] [文件加载：80]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'newlianmeng.lm_goodstype' doesn't exist[D:\Aliases\lianmeng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-01-15T14:55:05+08:00 ] 0.0.0.0 POST /admin.php/total/goodstype/add.html
+[ info ] www.lianmeng.com/admin.php/total/goodstype/add.html [运行时间：0.645443s][吞吐率：1.55req/s] [内存消耗：2,758.09kb] [文件加载：80]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'newlianmeng.lm_goodstype' doesn't exist[D:\Aliases\lianmeng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-01-15T15:22:37+08:00 ] 0.0.0.0 GET /admin.php/total/goodstype/edit/id/1.html
+[ info ] www.lianmeng.com/admin.php/total/goodstype/edit/id/1.html [运行时间：0.184838s][吞吐率：5.41req/s] [内存消耗：2,882.70kb] [文件加载：85]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'newlianmeng.lm_goodstype' doesn't exist[D:\Aliases\lianmeng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-01-15T15:47:50+08:00 ] 0.0.0.0 POST /admin.php/total/goodstype/add.html
+[ info ] www.lianmeng.com/admin.php/total/goodstype/add.html [运行时间：0.189982s][吞吐率：5.26req/s] [内存消耗：2,765.63kb] [文件加载：79]
+[ error ] [8]未定义数组索引: id[D:\Aliases\lianmeng\app\total\admin\Goodstype.php:50]
+---------------------------------------------------------------
+[ 2018-01-15T15:47:55+08:00 ] 0.0.0.0 POST /admin.php/total/goodstype/add.html
+[ info ] www.lianmeng.com/admin.php/total/goodstype/add.html [运行时间：0.156287s][吞吐率：6.40req/s] [内存消耗：2,766.71kb] [文件加载：79]
+[ error ] [8]未定义数组索引: id[D:\Aliases\lianmeng\app\total\admin\Goodstype.php:50]
+---------------------------------------------------------------
+[ 2018-01-15T16:26:02+08:00 ] 0.0.0.0 GET /admin.php/total/shop/edit/id/58.html
+[ info ] www.lianmeng.com/admin.php/total/shop/edit/id/58.html [运行时间：0.218218s][吞吐率：4.58req/s] [内存消耗：3,104.69kb] [文件加载：85]
+[ error ] [0]语法解析错误: syntax error, unexpected '{'[D:\Aliases\lianmeng\runtime\temp\643d0097e36701e02eb62f881d4450cb.php:181]
+---------------------------------------------------------------
+[ 2018-01-15T16:27:07+08:00 ] 0.0.0.0 GET /admin.php/total/shop/edit/id/58.html
+[ info ] www.lianmeng.com/admin.php/total/shop/edit/id/58.html [运行时间：0.205455s][吞吐率：4.87req/s] [内存消耗：3,105.02kb] [文件加载：85]
+[ error ] [0]语法解析错误: syntax error, unexpected '{'[D:\Aliases\lianmeng\runtime\temp\643d0097e36701e02eb62f881d4450cb.php:181]
+---------------------------------------------------------------
+[ 2018-01-15T17:19:41+08:00 ] 0.0.0.0 POST /admin.php/total/shop/edit.html
+[ info ] www.lianmeng.com/admin.php/total/shop/edit.html [运行时间：0.191321s][吞吐率：5.23req/s] [内存消耗：2,760.71kb] [文件加载：78]
+[ error ] [0]致命错误: Class 'app\total\admin\Valida1te' not found[D:\Aliases\lianmeng\app\total\admin\Shop.php:75]
+---------------------------------------------------------------
+[ 2018-01-15T17:30:17+08:00 ] 0.0.0.0 GET /admin.php/total/shop/goods/id/delete/id/57
+[ info ] www.lianmeng.com/admin.php/total/shop/goods/id/delete/id/57 [运行时间：0.156438s][吞吐率：6.39req/s] [内存消耗：2,889.88kb] [文件加载：83]
+[ error ] [8]未定义变量: _admin_menu_current[D:\Aliases\lianmeng\runtime\temp\cef3a4607ae53821d2494be1f4c49bbb.php:19]
+---------------------------------------------------------------
+[ 2018-01-15T17:30:24+08:00 ] 0.0.0.0 GET /admin.php/total/shop/goods/id/delete/id/57
+[ info ] www.lianmeng.com/admin.php/total/shop/goods/id/delete/id/57 [运行时间：0.166067s][吞吐率：6.02req/s] [内存消耗：2,890.20kb] [文件加载：83]
+[ error ] [8]未定义变量: _admin_menu_current[D:\Aliases\lianmeng\runtime\temp\cef3a4607ae53821d2494be1f4c49bbb.php:19]
+---------------------------------------------------------------
+[ 2018-01-15T17:59:21+08:00 ] 0.0.0.0 GET /admin.php/total/shop/index.html
+[ info ] www.lianmeng.com/admin.php/total/shop/index.html [运行时间：0.190903s][吞吐率：5.24req/s] [内存消耗：3,124.36kb] [文件加载：88]
+[ error ] [8]未定义变量: page[D:\Aliases\lianmeng\runtime\temp\f57ae6fb98c7fa2415d6adaba03059c4.php:343]
+---------------------------------------------------------------
+[ 2018-01-15T18:17:14+08:00 ] 0.0.0.0 GET /admin.php/total/shop/myadd.html
+[ info ] www.lianmeng.com/admin.php/total/shop/myadd.html [运行时间：0.171419s][吞吐率：5.83req/s] [内存消耗：2,889.85kb] [文件加载：85]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'newlianmeng.lm_goodstype' doesn't exist[D:\Aliases\lianmeng\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-01-15T18:26:23+08:00 ] 0.0.0.0 GET /admin.php/total/shop/myadd.html
+[ info ] www.lianmeng.com/admin.php/total/shop/myadd.html [运行时间：0.187285s][吞吐率：5.34req/s] [内存消耗：3,174.95kb] [文件加载：88]
+[ error ] [8]未定义数组索引: level[D:\Aliases\lianmeng\runtime\temp\b074dbcb1915f1c5b904aee2e23cbf0a.php:602]
+---------------------------------------------------------------
+[ 2018-01-15T18:29:06+08:00 ] 0.0.0.0 GET /admin.php/total/shop/myadd.html
+[ info ] www.lianmeng.com/admin.php/total/shop/myadd.html [运行时间：0.267825s][吞吐率：3.73req/s] [内存消耗：2,990.09kb] [文件加载：86]
+[ error ] [8]未定义数组索引: level[D:\Aliases\lianmeng\runtime\temp\b074dbcb1915f1c5b904aee2e23cbf0a.php:602]
+---------------------------------------------------------------
+[ 2018-01-15T18:42:48+08:00 ] 0.0.0.0 GET /admin.php/total/shop/mygoods.html
+[ info ] www.lianmeng.com/admin.php/total/shop/mygoods.html [运行时间：0.198871s][吞吐率：5.03req/s] [内存消耗：3,148.08kb] [文件加载：88]
+[ error ] [8]未定义变量: page[D:\Aliases\lianmeng\runtime\temp\4b63a8702367f03bd0cb810dbb7d1ee5.php:486]

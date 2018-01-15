@@ -55,7 +55,7 @@
             $.get('delete/id/'+id,function(a){
                 if(a.info==10000){
                     layer.msg('删除成功');
-                    location.href='index';
+                    location.reload();
                 }
                 if(a.info==20000){
                     layer.msg('删除失败');
